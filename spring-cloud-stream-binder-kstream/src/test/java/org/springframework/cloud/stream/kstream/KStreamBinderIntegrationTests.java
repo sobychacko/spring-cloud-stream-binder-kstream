@@ -99,8 +99,6 @@ public class KStreamBinderIntegrationTests {
 		@StreamListener("input")
 		@SendTo("output")
 		public KStream<?, WordCount> process(KStream<?, String> input) {
-			System.out.println("Hi there:" + input);
-
 			return input
 					.flatMapValues(value -> Arrays.asList(value.toLowerCase().split("\\W+")))
 					.map((key, word) -> new KeyValue<>(word, word))
