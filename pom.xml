@@ -71,7 +71,7 @@
 			<dependency>
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-stream-binder-test</artifactId>
-				<version>${spring-cloud-stream.version}</version>
+				<version>1.2.3.BUILD-SNAPSHOT</version>
 				<scope>test</scope>
 			</dependency>
 			<dependency>
